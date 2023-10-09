@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEch-NIK/Logowanie</title>
+</head>
+<body>
+
+<h2 style="color:DodgerBlue;"> Witaj na stronie </h2>
+<h1 style="color:Tomato;">  TEch-NIK</h1>
+
+<p>Strona w pracoch serwisowych</p>
+
+
+
+<form>
+    <label for="pswd">Podaj Hasło: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Zaloguj" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welc-sa-sdf34324-7643t5rgfdh-VLo.html";
+        }
+        else{
+            alert("Niepoprawne Hasło.");
+        }
+    }
+</script>
+
+
+
+<h4>Informacje na stronie na samym dole</h4>
+</body>
+</html>
